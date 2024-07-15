@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="Calculator.css">
+</head>
+<body>
+  <h1>NADINE</h1>
+   <div class="whole">
+        
+            <input type="text" id="display" class="display" disabled>
+        
+        <div>
+          <button class="btnn" onclick="appendToDisplay('log(')">log</button>
+        <button class="btnn" onclick="appendToDisplay('exp(')">e</button>
+        <button class="btnn" onclick="appendToDisplay('sin(')">sin</button>
+        <button class="btnn" onclick="appendToDisplay('cos(')">cos</button>
+        <button class="btnn" onclick="clearDisplay()">C</button>
+        </div>
+        
+            <div>
+            <button class="btnnA" onclick="appendToDisplay('sqrt(')">√</button>
+            <button class="btnnA" onclick="appendToDisplay('(')">(</button>
+            <button class="btnnA" onclick="appendToDisplay(')')">)</button>
+            <button class="btnnA" onclick="appendToDisplay('/')">/</button>
+            <button class="btnn" onclick="appendToDisplay('asin(')">asin</button>
+            </div>
+
+            <div>
+              <button class="btnnA" onclick="appendToDisplay('7')">7</button>
+              <button class="btnnA" onclick="appendToDisplay('8')">8</button>
+              <button class="btnnA" onclick="appendToDisplay('9')">9</button>
+              <button class="btnnA" onclick="appendToDisplay('*')">*</button>
+              <button class="btnn" onclick="appendToDisplay('acos(')">acos</button>
+            </div>
+
+            <div>
+              <button class="btnnA" onclick="appendToDisplay('4')">4</button>
+            <button class="btnnA" onclick="appendToDisplay('5')">5</button>
+            <button class="btnnA" onclick="appendToDisplay('6')">6</button>
+            <button class="btnnA" onclick="appendToDisplay('-')">-</button>
+            <button class="btnn" onclick="appendToDisplay('atan(')">atan</button>
+            </div>
+
+             <div>
+              <button class="btnnA" onclick="appendToDisplay('1')">1</button>
+            <button class="btnnA" onclick="appendToDisplay('2')">2</button>
+            <button class="btnnA" onclick="appendToDisplay('3')">3</button>
+            <button class="btnnA" onclick="appendToDisplay('+')">+</button>
+            <button class="btnn" onclick="appendToDisplay('log10(')">log10</button>
+             </div>
+
+           <div>
+            <button class="btnnA" onclick="appendToDisplay('0')">0</button>
+            <button class="btnnA" onclick="appendToDisplay('.')">.</button>
+            <button class="btnnA" onclick="appendToDisplay('^')">^</button>
+            <button class="eq" onclick="calculateResult()">=</button>
+            <button class="btnn" onclick="appendToDisplay('tan(')">tan</button>
+           </div>
+   </div>
+    <script src="Calculator.js"></script>
+</body>
+</html>
